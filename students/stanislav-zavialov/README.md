@@ -1,1 +1,1 @@
-Домашка скоро появится )
+Grid layout homework.
