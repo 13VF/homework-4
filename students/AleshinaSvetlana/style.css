@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+.mainWrapper {
+    max-width: 1024px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+.grid:last-of-type {
+    margin-bottom: 0;
+}
+
+.grid--Tabl {
+    gap: 0;
+    grid-template-areas: 
+    "header header header"
+    "nav content ads";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 25fr; 
+}
+
+.gridElement--header {
+    position: sticky;
+    top: 0;
+    grid-area: header;
+    background-color:black;
+}
+
+
+
+.gridElement--content {
+    grid-area: content;
+    grid-column: 2 / -1;
+    background-color: rgb(247, 245, 245)
+
+}
