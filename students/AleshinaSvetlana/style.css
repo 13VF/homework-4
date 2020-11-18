@@ -21,14 +21,34 @@ body {
     margin-bottom: 0;
 }
 
+
+
 .grid--Tabl {
     gap: 0;
     grid-template-areas: 
-    "header header header"
-    "nav content ads";
+    "header header"
+    "content content";
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 25fr; 
+    grid-template-rows: 1fr 10fr; 
 }
+
+
+.gridElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+}
+
+
+.gridElement--search {
+    display: flex;
+    padding: 20px 30px 20px 30px;
+    background-color: white;
+    width: 100%;
+        box-sizing: border-box;
+}
+
 
 .gridElement--header {
     position: sticky;
@@ -39,9 +59,13 @@ body {
 
 
 
-.gridElement--content {
+
+.gridElement--container {
     grid-area: content;
-    grid-column: 2 / -1;
-    background-color: rgb(247, 245, 245)
+    grid-column: 1 / 3;
+    background-color: rgb(163, 65, 65);
+    
 
 }
+
+
