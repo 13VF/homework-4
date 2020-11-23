@@ -1,0 +1,216 @@
+body {
+	margin: 0;
+}
+
+@font-face {
+	font-family: "GTEestiProDisplay";
+	font-style: normal;
+	font-weight: 700;
+	src: url("https://cdn1.ozone.ru/graphics/fonts/gteestipro/gteestiprodisplay-bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: 'GTEestiProText';
+	font-weight: 400;
+	font-style: normal;
+	src: url("https://cdn1.ozone.ru/graphics/fonts/gteestipro/gteestiprotext-regular.woff2") format("woff2");
+}
+
+
+h1{
+	font-family: "GTEestiProDisplay", Arial, sans-serif;
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 700;
+	text-align: left;
+	margin: 0 24px;
+}
+h2 {
+	font-family: "GTEestiProDisplay", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	text-align: left;
+	margin: 0 24px;
+}
+
+.mainWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/*max-width: 1416px;*/
+	width: 100%;
+	margin: 0 auto;
+	font-family: "GTEestiProText", Arial, sans-serif;
+	color: #001A34;
+	font-size: 16px;
+	line-height: 22px
+}
+
+.grid {
+	display: grid;
+	grid-gap: 10px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.grid:last-of-type {
+	margin-bottom: 0;
+}
+
+.gridElementTop {
+	display: flex;
+	align-items: center;
+	justify-content:flex-start;
+}
+.gridElement {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid--complex {
+	grid-template-areas:
+		"header"
+		"search"
+		"title";
+	grid-template-columns: 100%;
+	grid-template-rows: 50px 70px 150px;
+	grid-gap: 0;
+}
+
+.gridElement--header {
+	grid-area: header;
+	background: #005cfe;
+}
+
+.nameCompany {
+	width: 100%;
+	color: #fff;
+	font-family: "GTEestiProDisplay", Arial, sans-serif;
+	font-size: 32px;
+	text-align: left;
+	font-weight: 700;
+	margin-left: 24px;
+}
+
+.gridElement--search {
+	grid-area: search;
+	background: #f2f3f5;
+}
+.searchDescription{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.gridElement--title {
+	grid-area: title;
+	background: #fff;
+}
+
+.fashionWrapper {
+	background: #f2f3f5;
+	width: 100%;
+}
+
+.fashion {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 35px 80px;
+}
+
+.fashionDescription {
+	max-width: 220px;
+	width: 220px;
+}
+
+.fashionTitle h2 {
+	margin: 0px;
+}
+
+.fashionText {
+	margin: 15px 0px;
+}
+
+.productItemsWrapper {
+	display: flex;
+	width: calc(100% - 200px);
+}
+
+.productItems {
+	grid-template-areas:
+		"item1 item2 item3 item4 item5"
+		"item6 item7 item8 item9 item10";
+	grid-template-columns: 200px 200px 200px 200px 200px;
+	grid-template-rows: 200px 200px;
+	grid-gap: 40px;
+	justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1472px) {
+	.productItems {
+		grid-template-areas:
+			"item1 item2 item3 item4 item5"
+			"item6 item7 item8 item9 item10";
+		grid-template-columns: 150px 150px 150px 150px 150px;
+		grid-template-rows: 150px 150px;
+		grid-gap: 20px;
+		justify-content: flex-end;
+	}
+}
+
+.productItem {}
+
+.productItem1 {
+	grid-area: item1;
+}
+
+.productItem2 {
+	grid-area: item2;
+}
+
+.productItem3 {
+	grid-area: item3;
+}
+
+.productItem4 {
+	grid-area: item4;
+}
+
+.productItem5 {
+	grid-area: item5;
+}
+
+.productItem6 {
+	grid-area: item6;
+}
+
+.productItem7 {
+	grid-area: item7;
+}
+
+.productItem8 {
+	grid-area: item8;
+}
+
+.productItem9 {
+	grid-area: item9;
+}
+
+.productItem10 {
+	grid-area: item10;
+}
+
+.itemPhoto {
+	width: 200px;
+	height: 200px;
+}
+
+@media only screen and (max-width: 1472px) {
+	.itemPhoto {
+		width: 150px;
+		height: 150px;
+	}
+}
