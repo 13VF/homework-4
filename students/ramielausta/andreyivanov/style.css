@@ -31,7 +31,8 @@ aside {
     flex-direction: column;
     padding: 20px;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    color: white;
 }
 
 .section {
