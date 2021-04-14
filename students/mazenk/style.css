@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "div div"
+    "div1 section"
+    "div2 div2"
+    "footer footer";
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 50px 2fr 4fr 80px 50px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.flexboxConteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridElement--header {
+  grid-area: header;
+  background-color: #000000;
+}
+
+.gridElement--div {
+  grid-area: div;
+  background-color: #ffffff;
+}
+
+.gridElement--div1 {
+  grid-area: div1;
+  background-color: #f9f9f9;
+}
+
+.gridElement--section {
+  display: grid;
+  padding: 40px 70px;
+  gap: 30px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-area: section;
+  background-color: #f9f9f9;
+}
+
+.gridElement--div2 {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+  grid-area: div2;
+  background-color: #f9f9f9;
+}
+
+.gridElement--footer {
+  grid-area: footer;
+  background-color: #000000;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+}
+
+.mainTittle {
+  max-width: 200vh;
+  font-weight: 300;
+  font-size: 22px;
+  color: black;
+}
+
+input {
+  margin-top: 20px;
+  margin-left: 40px;
+  max-width: 150vh;
+  height: 35px;
+  border: 1px solid rgba(174, 174, 174, 0.5);
+  border-radius: 5px;
+}
+
+h1 {
+  margin-top: 60px;
+  margin-left: 90px;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+pre {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+.sectionTittle {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.image {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background-color: palevioletred;
+}
